@@ -25,7 +25,7 @@ type CreatePostRequest struct {
 	UpdatedAt time.Time `json:"updated_at,omitempty"`
 }
 
-type updatePostRequest struct {
+type UpdatePostRequest struct {
 	Title     string    `json:"title"  binding:"required"`
 	Content   string    `json:"content" binding:"required"`
 	Image     string    `json:"image" binding:"required"`
